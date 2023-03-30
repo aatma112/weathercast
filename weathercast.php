@@ -8,7 +8,7 @@
     $file_headers = @get_headers("https://www.weather-forecast.com/locations/" . $city . "/forecasts/latest");
 
     if($file_headers[0] == "HTTP/1.1 404 Not Found") {
-      $error = "That could not be found.";
+      $error = "Enter the name of the city.";
     }
 
     else {
@@ -34,10 +34,10 @@
     }//end file headers are NOt empty! 
 
   }
-  else {
-    $error = "That city could not be found~";
+  // else {
+  //   $error = "That city could not be found~";
 
-  }//end of array key exists test
+  // }//end of array key exists test
 ?>
 
 
